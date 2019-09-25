@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container bg-primary"style="margin-top:60px;">
+<h2>heading</h2>
+<div id="example"></div>
+<label>First Name</label>
+<input type="text" id="First" class="form-control" value="enter the Last name">
+<label>Last Name</label>
+<input type="text" id="Last" class="form-control" value="enter the First name">
+<label>Email</label>
+<input type="email" id="Email" class="form-control" value="enter the Email">
+<label>Password</label>
+<input type="password" id="Password" class="form-control" value="enter the name">
+<button class="btn btn-success" onclick="item()" style="margin:30px;">click me</button>
+</div>
+<script>
+function item(){
+$("h2").text("VBM INFO TECH")
+$("#First").val("Keerthi")
+$("#Last").val("Madatala")
+$("#Email").val("Keerthim@gmail.com")
+$(".container").css("background-color","orange")
+$(".btn").css("background-color","blue")
+$("h2").hide()
+$("h2").show()
+}
+$("#example").html("<h4>hello world</h4>")
+$("#example").remove()
+</script>
+</body>
+</html>
